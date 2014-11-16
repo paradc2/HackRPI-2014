@@ -5,6 +5,7 @@
 #include <cmath>
 #include <vector>
 
+#include "speaker.h"
 #define NUM_SPEAKERS 2
 
 typedef double dist;
@@ -44,43 +45,3 @@ int _tmain(int argc, _TCHAR* argv[])
 	//
 	return 0;
 }
-
-// Class declaration...put somewhere else?
-
-class Speaker {
-public:
-	Speaker(const dist x0, const dist y0);
-
-	// ACCESSORS
-	dist getX() const;
-	dist getY() const;
-	volume getL() const;
-
-	// MODIFIERS
-	void setX(const dist x0);
-	void setY(const dist y0);
-	void setL(const volume L0);
-
-	// OTHER
-private:
-	dist x_0;
-	dist y_0;
-	volume L_0;
-
-};
-
-void getAverages(const Speaker &s1, const Speaker &s2, dist &x_c, dist &y_c);
-
-// Class implementation...put somewhere else
-Speaker::Speaker(const dist x0, const dist y0) {
-	x_0 = x0;
-	y_0 = y0;
-}
-
-dist Speaker::getX() const { return x_0; }
-dist Speaker::getY() const { return y_0; }
-volume Speaker::getL() const { return L_0; }
-
-void Speaker::setX(const dist x0) { x_0 = x0; }
-void Speaker::setY(const dist y0) { y_0 = y0; }
-void Speaker::setL(const volume L0) { L_0 = L0; }
