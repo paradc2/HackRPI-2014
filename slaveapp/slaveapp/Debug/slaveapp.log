@@ -1,9 +1,12 @@
-﻿Build started 11/16/2014 10:16:50 AM.
-     1>Project "C:\Users\tunesquad\Documents\tunesquad\slaveapp\slaveapp\slaveapp.vcxproj" on node 2 (Build target(s)).
+﻿Build started 11/16/2014 12:46:30 PM.
+     1>Project "C:\Users\Admin\Documents\tunesquad\slaveapp\slaveapp\slaveapp.vcxproj" on node 2 (Build target(s)).
      1>Link:
-         slaveapp.vcxproj -> C:\Users\tunesquad\Documents\tunesquad\slaveapp\Debug\slaveapp.exe
-     1>Done Building Project "C:\Users\tunesquad\Documents\tunesquad\slaveapp\slaveapp\slaveapp.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Admin\Documents\tunesquad\slaveapp\Debug\slaveapp.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Admin\Documents\tunesquad\slaveapp\Debug\slaveapp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Admin\Documents\tunesquad\slaveapp\Debug\slaveapp.lib" /MACHINE:X86 Debug\slaveapp.obj
+         Debug\speaker.obj
+         Debug\stdafx.obj
+         slaveapp.vcxproj -> C:\Users\Admin\Documents\tunesquad\slaveapp\Debug\slaveapp.exe
+     1>Done Building Project "C:\Users\Admin\Documents\tunesquad\slaveapp\slaveapp\slaveapp.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.08
+Time Elapsed 00:00:00.69
