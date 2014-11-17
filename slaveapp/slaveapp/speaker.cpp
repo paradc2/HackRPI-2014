@@ -12,19 +12,22 @@ Speaker::Speaker() {
 	y_0 = 0;
 	z_0 = 0;
 	L_0 = 0;
+	ID = 0;
 }
 
-Speaker::Speaker(const dist x0, const dist y0, const dist z0) {
+Speaker::Speaker(const int ID_, const dist x0, const dist y0, const dist z0) {
 	x_0 = x0;
 	y_0 = y0;
 	z_0 = z0;
 	L_0 = 0;
+	ID = ID_;
 }
 
 dist Speaker::getX() const { return x_0; }
 dist Speaker::getY() const { return y_0; }
 dist Speaker::getZ() const { return z_0; }
 volume Speaker::getL() const { return L_0; }
+int Speaker::getID() const { return ID; }
 
 void Speaker::setX(const dist x0) { x_0 = x0; }
 void Speaker::setY(const dist y0) { y_0 = y0; }

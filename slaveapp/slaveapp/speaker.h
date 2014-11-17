@@ -10,13 +10,14 @@ typedef double volume;
 class Speaker {
 public:
 	Speaker();
-	Speaker(const dist x0, const dist y0, const dist z0);
+	Speaker(const int ID_, const dist x0, const dist y0, const dist z0);
 
 	// ACCESSORS
 	dist getX() const;
 	dist getY() const;
 	dist getZ() const;
 	volume getL() const;
+	int getID() const;
 
 	// MODIFIERS
 	void setX(const dist x0);
@@ -30,6 +31,7 @@ private:
 	dist y_0;
 	dist z_0;
 	volume L_0;
+	int ID;
 
 };
 
