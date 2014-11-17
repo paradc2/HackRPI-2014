@@ -39,6 +39,9 @@ void update(Speaker &s, dist &x, dist &y, dist &z, const volume &L_c, const dist
 	if (L_0 < 0) { L_0 = 0; }
 
 	s.setL(L_0);
+
+	volume send_val = (pow(10, (L_0 / 20)) - 1) / 8000;
+	//send value L_0 to database, 
 	//std::cout << L_0 << "\n";
 }
 
