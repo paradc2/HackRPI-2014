@@ -14,11 +14,15 @@
 typedef double dist;
 typedef double volume;
 
+// This is the function that needs to pull data from KINECT position sensors
 void getDist(dist &x, dist &y, dist &z) {
 	//std::cin >> x >> y >> z;
-	//Interpret KINECT data to update x, y, and z position
+	// Interpret KINECT data to update x, y, and z position
+	// Don't return, just change, since they are passed in by reference
 }
 
+// This function updates that member variable representing the volume for a certain speaker
+// based on the readings of position
 void update(Speaker &s, dist &x, dist &y, dist &z, const volume &L_c, const dist &x_c, const dist &y_c, const dist &z_c) {
 
 	//std::cout << "Speaker " << s.getID() << ":\nx: " << s.getX() << ", y: " << s.getY() << ", z: " << s.getZ() << "\n";
@@ -55,6 +59,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	getAverages(speakers, x_c, y_c, z_c);
 
+	// Loop forever, update each speaker every time
 	while (1) {
 		for (unsigned int i = 0; i < speakers.size(); ++i) {
 			update(speakers[i], x, y, z, L_c, x_c, y_c, z_c);
