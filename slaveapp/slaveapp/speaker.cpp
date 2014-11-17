@@ -1,4 +1,5 @@
 
+#include "stdafx.h"
 #include "speaker.h"
 
 #include <vector>
@@ -6,10 +7,18 @@
 typedef double dist;
 typedef double volume;
 
-Speaker::Speaker(const dist x0, const dist y0, const z0) {
+Speaker::Speaker() {
+	x_0 = 0;
+	y_0 = 0;
+	z_0 = 0;
+	L_0 = 0;
+}
+
+Speaker::Speaker(const dist x0, const dist y0, const dist z0) {
 	x_0 = x0;
 	y_0 = y0;
 	z_0 = z0;
+	L_0 = 0;
 }
 
 dist Speaker::getX() const { return x_0; }
@@ -22,7 +31,7 @@ void Speaker::setY(const dist y0) { y_0 = y0; }
 void Speaker::setZ(const dist z0) { y_0 = z0; }
 void Speaker::setL(const volume L0) { L_0 = L0; }
 
-void getAverages(const std::vector<Speaker> &speakers, dist &x_c, dist &y_c, dist &z) {
+void getAverages(const std::vector<Speaker> &speakers, dist &x_c, dist &y_c, dist &z_c) {
 	dist x_c_ = 0;
 	dist y_c_ = 0;
 	dist z_c_ = 0;

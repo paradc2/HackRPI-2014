@@ -9,6 +9,7 @@ typedef double volume;
 
 class Speaker {
 public:
+	Speaker();
 	Speaker(const dist x0, const dist y0, const dist z0);
 
 	// ACCESSORS

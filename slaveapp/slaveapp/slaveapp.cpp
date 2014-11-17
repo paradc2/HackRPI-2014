@@ -18,11 +18,11 @@ void getDist(dist &x, dist &y, dist &z) {
 	//Interpret KINECT data to update x, y, and z position
 }
 
-void update(Speaker &s, dist &x, dist &y, dist &z, const volume &L_c, const dist &x_c, const dist &y_c const dist &z_c) {
+void update(Speaker &s, dist &x, dist &y, dist &z, const volume &L_c, const dist &x_c, const dist &y_c, const dist &z_c) {
 
 	getDist(x, y, z);
 
-	dist r_0 = sqrt(pow((x - x_0), 2) + pow((y - y_0), 2) + pow((z - z_0), 2));
+	dist r_0 = sqrt(pow((x - s.getX()), 2) + pow((y - s.getY()), 2) + pow((z - s.getZ()), 2));
 	dist r = sqrt(pow((x - x_c), 2) + pow((y - y_c), 2) + pow((z - z_c), 2));
 
 	volume L_0 = L_c + 20 * log(r_0 / r);
